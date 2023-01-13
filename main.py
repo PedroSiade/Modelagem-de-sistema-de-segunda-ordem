@@ -133,7 +133,7 @@ for t in periodos:
     # Gera quadro da imagem com nova posição dos blocos
     print("%.5f, %.5f, %.5f, %.5f, %.5f, %.5f, %.5f, %.5f, %.5f, %.5f, %.5f, %.5f, %.5f, %.5f, %.5f " % \
           (x1, x2, k1, k2, k3, b, m1, m2, v, a1, a2, f1, f2, f3, fb))
-    img = posiciona_blocos(img, int(x1*150), int(x2*150), str(t) + " em " + str(tf))
+    img = posiciona_blocos(img, int(x1*90), int(x2*90), str(t) + " em " + str(tf))
     
     # Mostra a imagem em movimento
     fim = mostra_img(img)
@@ -141,10 +141,10 @@ for t in periodos:
     t = float(t)
     
     x1 = Decimal(-1.398047538899 * math.cos(1.725554106593 * t) * math.exp(-0.665869315209 * t)-0.543347494885 * math.exp(-0.665869315209 * t) * math.sin(1.725554106593 * t) + 0.012045439804 *
-                 math.exp(-0.000797351457 * t) * math.sin(0.936459671869 * t)+2.898047538899 * math.cos(0.936459671869 * t) * math.exp(-0.000797351457 * t)) #+ (v1*tp) + (Decimal(0.5)*(a1*tp**2))
+                 math.exp(-0.000797351457 * t) * math.sin(0.936459671869 * t)+2.898047538899 * math.cos(0.936459671869 * t) * math.exp(-0.000797351457 * t)) + Decimal(1.5)
     
     x2 = Decimal(-1.176388995674*math.exp(-0.665869315209*t)*math.sin(1.725554106593*t)+2.807102421878*math.exp(-0.000797351457*t)*math.sin(0.936459671869*t)+0.89185485616 *
-                 math.cos(1.725554106593*t)*math.exp(-0.665869315209*t)+3.108145143839*math.cos(0.936459671869*t)*math.exp(-0.000797351457*t)) #+ (v2*tp) + (Decimal(0.5)*(a2*tp**2))
+                 math.cos(1.725554106593*t)*math.exp(-0.665869315209*t)+3.108145143839*math.cos(0.936459671869*t)*math.exp(-0.000797351457*t)) + 4
 
 encerra()
     
