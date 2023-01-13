@@ -8,7 +8,7 @@ cor_bloco2 = (0, 0, 255)
 cor_molas  = (100, 0, 100)
 cor_amort  = (0, 100, 100)
 solo       = 500   # Coordenada do solo para desenho do cenário
-pri_barra  = 100   # Posição da primeira barra da estrutura
+pri_barra  =100   # Posição da primeira barra da estrutura
 sec_barra  = 1100   # Posição da segunda barra da estrutura
 alt_barra  = 200   # Altura das barras laterais
 larg       = 10    # Largura das estruturas do cenário
@@ -17,8 +17,8 @@ tam_bloco  = 100   # Lado do bloco (quadrado)
 tam_amort  = 80    # Tamanho do amortecedor
 tam_mola   = 150    # Tamanho minimo da mola
 num_mola   = 12    # quantidade de itens na mola
-#x1i        = 130   # Localização inicial de x1, quando não há tração na mola
-#x2i        = 360   # Localização inicial de x2, quando não há tração na mola
+x1i        = 130   # Localização inicial de x1, quando não há tração na mola
+x2i        = 360   # Localização inicial de x2, quando não há tração na mola
 # 
 # Cria o cenário para os bloquinhos
 #
