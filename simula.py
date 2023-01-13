@@ -17,8 +17,8 @@ tam_bloco  = 100   # Lado do bloco (quadrado)
 tam_amort  = 80    # Tamanho do amortecedor
 tam_mola   = 150    # Tamanho minimo da mola
 num_mola   = 12    # quantidade de itens na mola
-x1i        = 130   # Localização inicial de x1, quando não há tração na mola
-x2i        = 360   # Localização inicial de x2, quando não há tração na mola
+#x1i        = 130   # Localização inicial de x1, quando não há tração na mola
+#x2i        = 360   # Localização inicial de x2, quando não há tração na mola
 # 
 # Cria o cenário para os bloquinhos
 #
