@@ -46,9 +46,12 @@ m2 = Decimal('15')
 image = cria_cenario()
 
 periodos = gera_periodos(tf, tp)
-
+c = 1
+d = 0.5
 for t in periodos:
     img = image.copy()
+    c = 1
+    d = 0.5
     
     # Calcula nova posição dos blocos
     xa1, xa2 = nova_posição2(x1, x2)
@@ -63,14 +66,14 @@ for t in periodos:
     
     t = float(t)
     
-    #Função que calcula a posição do carro 1
-    x1 = Decimal(3)+Decimal(-1.398047538899 * math.cos(1.725554106593 * t) * math.exp(-0.665869315209 * t)-0.543347494885 * math.exp(-0.665869315209 * t) * math.sin(1.725554106593 * t) + 0.012045439804 *
-                 math.exp(-0.000797351457 * t) * math.sin(0.936459671869 * t)+2.898047538899 * math.cos(0.936459671869 * t) * math.exp(-0.000797351457 * t))
+    # Função que calcula a posição do carro 1
+    x1 = Decimal(5)+Decimal(-0.035632906617*c*math.exp(-0.000797351457*t)*math.sin(0.936459671869*t)+0.259029417775*c*math.exp(-0.665869315209*t)*math.sin(1.725554106593*t)+0.379765860396*c*math.cos(0.936459671869*t)*math.exp(-0.000797351457*t)+0.620234139604*c*math.cos(1.725554106593*t)*math.exp(-0.665869315209*t) -
+                            0.582099687076*d*math.cos(1.725554106593*t)*math.exp(-0.665869315209*t)-0.232972905387*d*math.exp(-0.665869315209*t)*math.sin(1.725554106593*t)+0.016373699932*d*math.exp(-0.000797351457*t)*math.sin(0.936459671869*t)+0.582099687076*d*math.cos(0.936459671869*t)*math.exp(-0.000797351457*t))
     
-    #Função que calcula a posição do carro 2
-    x2 = Decimal(8)+Decimal(-1.176388995674*math.exp(-0.665869315209*t)*math.sin(1.725554106593*t)+2.807102421878*math.exp(-0.000797351457*t)*math.sin(0.936459671869*t)+0.89185485616 *
-                 math.cos(1.725554106593*t)*math.exp(-0.665869315209*t)+3.108145143839*math.cos(0.936459671869*t)*math.exp(-0.000797351457*t))
-
+    # Função que calcula a posição do carro 2
+    x2 = Decimal(9.3)+Decimal(-0.405762050475*c*math.cos(1.725554106593*t)*math.exp(-0.665869315209*t)-0.142530574607*c*math.exp(-0.665869315209*t)*math.sin(1.725554106593*t)-0.025194048546*c*math.exp(-0.000797351457*t)*math.sin(0.936459671869*t)+0.405762050475*c*math.cos(0.936459671869*t)*math.exp(-0.000797351457*t) +
+                            0.037005880652*d*math.exp(-0.000797351457*t)*math.sin(0.936459671869*t)+0.127296276424*d*math.exp(-0.665869315209*t)*math.sin(1.725554106593*t)+0.380439685332*d*math.cos(1.725554106593*t)*math.exp(-0.665869315209*t)+0.619560314668*d*math.cos(0.936459671869*t)*math.exp(-0.000797351457*t))
+    
 encerra()
     
 
