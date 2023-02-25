@@ -26,7 +26,7 @@ sb = Decimal(sec_barra/100)
 
 x1 = Decimal('1.50')     # posição inicial
 x2 = Decimal('3.0')     # posição final
-tf = Decimal('60.0')      # tempo final da simulação
+tf = Decimal('200.0')      # tempo final da simulação
 tp = Decimal('0.1')     # passo de mudança do tempo
 
 # Velocidades iniciais 
